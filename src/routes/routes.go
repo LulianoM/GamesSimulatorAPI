@@ -8,4 +8,5 @@ import (
 func Setup(app *fiber.App) {
 	api := app.Group("api")
 	api.Get("healthcheck", controllers.Healthcheck)
+	api.Post("jokenpo", controllers.Jokenpo)
 }
